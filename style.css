@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ebebeb;
+    transition: all .4s ease 0s;
+}
+.dark{background: #2b2b2b;}.light{background: #ebebeb;}.alert {position: fixed;top: 4%;}
+.list-content {
+    width: 25%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list-content__text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #9b9b9b;
+    margin-bottom: 20px;
+}
+.list-content__input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #8F6970;
+
+    width: max-content;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+
+    border: 2px solid #9b9b9b;
+    border-radius: 5px;
+    background: transparent;
+    outline: none;
+
+}
+.list-content__input::placeholder{
+    color: #9b9b9b;
+}
+.list-content__input:focus {
+    border-color: #8F6970;
+}
+.list-content__input:focus::placeholder {
+    font-size: 0;
+}
+.list-content__add {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #8F6970;
+
+    cursor: pointer;
+    padding: 12px 20px;
+    margin-right: 10px;
+
+    border: 2px solid #9b9b9b;
+    border-radius: 5px;
+    background: transparent;
+    outline: none;
+}
+.list-content__add:hover {
+    border-color: #8F6970;
+}
+.list-display {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #8F6970;
+
+    cursor: pointer;
+    padding: 12px 20px;
+
+    border: 2px solid #9b9b9b;
+    border-radius: 5px;
+    background: transparent;
+    outline: none;
+}
+.list-display:hover {
+    border-color: #8F6970;
+}
+.list-content__block {
+    margin-bottom: 20px;
+}
+.list__block {
+    position: absolute;
+    top: 60%;
+}
+.list {
+    position: absolute;
+    top: 0;
+
+    width: max-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #757573;
+
+    padding: 12px 20px;
+
+    border: 1px solid #C9C9C9;
+    border-radius: 5px;
+    background: #ECECEC;
+    user-select: none;
+    opacity: 0;
+    transition: all .25s ease 0s;
+
+    z-index: 9;
+}
+#list__add {
+    transform: translateX(-50%);
+}
+#list__none {
+    transform: translateX(-50%);
+}
+.list__block{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: rgb(43, 43, 43,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease 0s;
+    opacity: 0;
+    z-index: -1;
+}
+.close{
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    user-select: none;
+    cursor: pointer;
+}
+.list__content{
+    width: 700px;
+    height: 700px;
+    background: #4b4b4b;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 10px rgb(38, 38, 38);
+}
+.list-arr {
+    width: 600px;
+    height: 600px;
+    word-wrap: break-word;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ebebeb;
+    line-height: 150%;
+    transition: all .3s ease 0s;
+}
+.visible {
+    opacity: 1;
+}
+.showList{
+    opacity: 1;
+    z-index: 10;
+}
+/* switch */
+.switch {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: .4s;
+}
+.slider .circle {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}

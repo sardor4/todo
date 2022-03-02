@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header light">
+        <label class="switch">
+            <span class="slider">
+                <span class="circle"></span>
+            </span>
+          </label>
+        <div class="alert">
+            <div class="list" id="list__add">Элемент добавлен</div>
+            <div class="list" id="list__none">К сожалению элемент не добавлен</div>
+        </div>
+        <div class="list-content">
+            <h2 class="list-content__text">Список дел</h2>
+            <input type="text" class="list-content__input" placeholder="Задание">
+            <div class="list-content__block">
+                <button class="list-content__add">Добавить</button>
+                <button class="list-display">Отобразить</button>
+            </div>
+        </div>
+        <div class="list__block">
+            <div class="close">&#10006</div>
+            <div class="list__content">
+                <div class="list-arr"></div>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
